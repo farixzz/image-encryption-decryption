@@ -1,68 +1,123 @@
-# image-encryption-decryption
-This project implements a basic Image Encryption and Decryption tool using Python. The application provides a graphical user interface (GUI) built with Tkinter that allows users to encrypt and decrypt images using a simple XOR-based algorithm.
+# 🖼️ Image Encryption & Decryption Tool (Python)
 
-Features
+A Python-based **Image Encryption and Decryption** application built for learning and demonstration purposes.
+The project uses a **simple XOR-based encryption algorithm** and provides a **user-friendly GUI** developed with **Tkinter**.
 
-Encrypt Images: Select a JPG image from your file system and encrypt it with a key.
-Decrypt Images: Decrypt an encrypted image using the same key.
-Graphical Interface: User-friendly interface for easy interaction with the encryption and decryption processes.
+This tool demonstrates the fundamentals of **file-level encryption**, **byte manipulation**, and **basic cryptographic concepts** in a clear and interactive way.
 
-How It Works
+---
 
-Encryption: The image is read as a byte array, and each byte is XORed with the provided key, resulting in an encrypted image file.
-Decryption: The encrypted image can be decrypted by applying the same key used during encryption. The decryption process reverses the XOR operation to restore the original image.
+## 🚀 Features
 
-Requirements
+* 🔐 **Image Encryption**
+  Encrypt JPG images using a user-defined numeric key.
 
-Python 3.x
-Tkinter
-PIL (Pillow)
+* 🔓 **Image Decryption**
+  Decrypt encrypted images using the same key applied during encryption.
 
-Installation
+* 🖥️ **Graphical User Interface (GUI)**
+  Clean and intuitive interface built with Tkinter.
+
+* 🧪 **Educational Focus**
+  Designed to help understand how XOR-based encryption works at the byte level.
+
+---
+
+## ⚙️ How It Works
+
+### 🔑 Encryption
+
+* The selected image is read as a **byte array**
+* Each byte is XORed with the provided integer key
+* The resulting output is saved as an encrypted image file
+
+### 🔁 Decryption
+
+* The encrypted image is processed using the **same key**
+* Applying XOR again reverses the operation
+* The original image is restored
+
+> ⚠️ **Note:**
+> XOR encryption is used here **for learning purposes only** and should **not** be considered secure for real-world applications.
+
+---
+
+## 🧰 Requirements
+
+* Python 3.x
+* Tkinter (comes pre-installed with most Python distributions)
+* Pillow (PIL)
+
+---
+
+## 📦 Installation
 
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/image-encryption-decryption.git
+```bash
+git clone https://github.com/farixzz/image-encryption-decryption.git
 cd image-encryption-decryption
+```
 
-Install the required packages:
+Install dependencies:
 
-bash
-
-
+```bash
 pip install -r requirements.txt
-Alternatively, you can manually install the required packages:
+```
 
-bash
-Copy code
+Or install manually:
+
+```bash
 pip install Pillow
-Usage
+```
+
+---
+
+## ▶️ Usage
+
 Run the application:
 
-bash
-Copy code
+```bash
 python image_encryption_decryption.py
-Use the GUI to:
+```
 
-Click Choose to select an image file.
-Enter an integer key in the Enter Key field.
-Click Encrypt to encrypt the selected image.
-Click Decrypt to decrypt the encrypted image.
-The encrypted and decrypted images can be saved to your desired location.
+### Using the GUI:
 
-Project Structure
-image_encryption_decryption.py: Main Python script containing the implementation of the encryption and decryption tool.
-requirements.txt: List of dependencies required for the project.
+1. Click **Choose Image** to select a JPG file
+2. Enter an **integer key** in the input field
+3. Click **Encrypt** to encrypt the image
+4. Click **Decrypt** to restore the original image
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Encrypted and decrypted images can be saved to your preferred location.
 
-Feel free to customize the README as needed!
+---
 
+## 📁 Project Structure
 
+```
+image-encryption-decryption/
+│
+├── image_encryption_decryption.py   # Main application script
+├── requirements.txt                 # Project dependencies
+└── README.md                        # Project documentation
+```
 
+---
 
+## 🛡️ Use Case
 
+* Learning **basic cryptography concepts**
+* Understanding **byte-level file manipulation**
+* Academic demonstrations
+* Cybersecurity & Python practice projects
 
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for more details.
+
+---
+
+⭐ If you find this project useful, consider starring the repository!
